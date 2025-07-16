@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.dice-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+}
+body{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height:100vh;
+    background-color:#e7e0b9;
+
+}
+h2{ margin-bottom: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+p{
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: rgb(158, 120, 69);
+}
+#dice{
+    margin: 18px;
+    width: 150px;
+    height: 150px;
+    background-color: #ab915d;
+    animation: shake 5s linear;
+}
+.output{
+    text-align:center;
+    max-width:90vw;
+    word-break:normal;
+}
+
+button{
+    margin: 25px;
+    padding:8px;
+    border: none;
+    border-radius: 5px;
+    background:#b09160;
+    transition: background  1s ease;
+    cursor:pointer;
+}
+button:hover{
+    background: tan;
+}
+.typing{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(20,end) 1;
+}
+/*CSS animations section*/
+@keyframes typing{
+    from{
+        width:0;
+    }
+    to{
+        width:20ch; 
+    }
+}
+/*@keyframes shake {
+ 0%  { transform: translateX(0) }
+ 25% { transform: translateX(10px) }
+ 50% { transform: translateX(-10px) }
+ 75% { transform: translateX(10px) }
+ 100%{ transform: translateX(0) }
+}*/
